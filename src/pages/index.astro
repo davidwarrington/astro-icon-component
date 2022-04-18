@@ -1,5 +1,6 @@
 ---
 import {Content as TourContent} from '../content/Tour.md';
+import Icon from '../components/icon.astro';
 import Logo from '../components/Logo.astro';
 import '../styles/global.css';
 import '../styles/home.css';
@@ -57,6 +58,7 @@ let title = 'My Astro Site';
 		<header>
 			<div>
 				<Logo width={60} height={80} />
+				<Icon icon="arrow-down" />
 				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
 			</div>
 		</header>
@@ -71,14 +73,13 @@ let title = 'My Astro Site';
 		<!--
 
 		You can also use imported framework components directly in your markup!
-		
+
 		Note: by default, these components are NOT interactive on the client.
 		The `client:visible` directive tells Astro to make it interactive.
-		
-		See https://docs.astro.build/core-concepts/component-hydration/ 
+
+		See https://docs.astro.build/core-concepts/component-hydration/
 
 		-->
-
 	</main>
 </body>
 </html>
